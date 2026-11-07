@@ -1,0 +1,38 @@
+name: stanzzPracticer
+version: 1.0.0
+main: id.stanzz.practicer.StanzzPracticer
+api-version: '1.21'
+description: Practice bot dengan kit yang bisa diedit + RTP & TPA
+commands:
+  practice:
+    description: Mulai/stop practice lawan bot
+    usage: /practice <kit|stop>
+    aliases: [prac]
+  kit:
+    description: Kelola kit practice
+    usage: /kit <list|load|save|delete> [nama]
+  bot:
+    description: Spawn/hapus bot practice
+    usage: /bot <spawn|clear>
+  rtp:
+    description: Teleport acak
+  tpa:
+    description: Minta teleport ke pemain
+    usage: /tpa <player>
+  tpahere:
+    description: Minta pemain teleport ke kamu
+    usage: /tpahere <player>
+    aliases: [tphere]
+  tpaccept:
+    description: Terima request teleport
+  tpdeny:
+    description: Tolak request teleport
+  tpacancel:
+    description: Batalkan request teleport yang kamu kirim
+    aliases: [tpcancel]
+permissions:
+  practice.use:
+    default: true
+  practice.admin:
+    description: Edit kit, bypass cooldown rtp
+    default: op
