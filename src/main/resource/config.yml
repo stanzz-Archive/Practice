@@ -1,0 +1,9 @@
+rtp:
+  radius: 5000
+  cooldown-seconds: 30
+tpa:
+  timeout-seconds: 60
+bot:
+  health: 40
+  speed: 0.28
+  respawn-delay-ticks: 60
